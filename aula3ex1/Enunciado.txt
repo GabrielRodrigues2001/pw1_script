@@ -1,0 +1,5 @@
+Evercícios JavaScript
+
+1) Monte a abstração lógica de como funciona o cálculo do Teorêma de Pitágoras.
+2) Com base nese sistema de funcionamento, monte um fluxograma da execução deste sistema.
+3) Com base no fluxograma, use seus conhecimentos para montar um código JavaScript para calcular no console o CA, CO, ou H.
