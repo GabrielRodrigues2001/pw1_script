@@ -11,10 +11,26 @@
 
     </header>
     <main>
-
+        <p>
+            <label for="h">HH</label>
+            <input type="text" id="h">
+        </p>
+        <p>
+            <label for="ca">CA</label>
+            <input type="text" id="ca">
+        </p>
+        <p>
+            <label for="co">CO</label>
+            <input type="text" id="co">
+        </p>
+        <hr>
+        Resposta: <span id="resposta"></span>
+        <p>
+            <button id="pitagoras" onclick="recebePitagoras()">Calcular</button>
+        </p>
     </main>
     <footer>
-        <script type="module" src="./src/index.js"></script>
+        <script src="./src/index.js"></script>
     </footer>
 </body>
 </html>

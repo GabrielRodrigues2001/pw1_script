@@ -1,46 +1,45 @@
 //Funções de cálculo
-function calculaA(b, c, d) 
+function calculaH(co, ca) 
 {
-    return (b * c) / d
+    return Math.sqrt(Math.pow(ca, 2) + Math.pow(co, 2))
 }
 
-function calculaB(a, c, d) 
+function calculaCO(h, ca) 
 {
-    return (a * d) / c
+    return Math.sqrt(Math.pow(h, 2) - Math.pow(ca, 2))
 }
 
-function calculaC(a, b, d) 
+function calculaCA(h, co) 
 {
-    return (a * d) / b
+    return Math.sqrt(Math.pow(h, 2) - Math.pow(co, 2))
 }
 
-function calculaD(a, b, c) 
+//Função teorêma de pitágoras
+function TeoremaDePitagoras(h, ca, co)
 {
-    return (b * c) / a
-}
-
-//Função regra de três
-function regraDeTres(a, b, c, d)
-{
-    if (a == 0) 
+    if (h == 0) 
     {
-        return calculaA(b, c, d)
+        return calculaH(co, ca)
     }
 
-    else if (b == 0)
+    else if (co == 0)
     {
-        return calculaB(a, c, d)
-    }
-
-    else if (c == 0)
-    {
-        return calculaC(a, b, d)
+        return calculaCO(h, ca)
     }
 
     else
     {
-        return calculaD(a, b, c)
+        return calculaCA(h, co)
     }
 }
 
-console.log(regraDeTres(0, 320, 40, 128))
+function recebePitagoras()
+{
+    let h = document.getElementById("h").value
+    let ca = document.getElementById("ca").value
+    let co = document.getElementById("co").value
+
+    console.log("Resultado: " + TeoremaDePitagoras(h, ca, co))
+
+    document.getElementById("resposta").innerHTML = TeoremaDePitagoras(h, ca, co)
+}
