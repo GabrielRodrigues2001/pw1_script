@@ -1,0 +1,12 @@
+Execercício de JavaScript
+
+1) Monte um vetor de 6 lugares, que adicione um número da sorte para cada posição como palpite para um jogo na mega-sena.
+
+2) Os números devem seguir as seguintes regras:
+	a. 1º, 2º e 3º devem estar entre 01 e 24.
+	b. 4º, 5º e 6º devem estar entre 25 e 60. 
+	c. Os números não podem se repetir.
+	d. Os números precisam ser gerados com uso de um laço de repetição.
+	e. Ao apresentar, os números devem ser colocados de for crescente no console.
+
+3) O código deve utilizar as boas práticas de funções para ser executado
